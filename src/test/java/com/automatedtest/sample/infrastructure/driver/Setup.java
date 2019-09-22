@@ -8,20 +8,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Setup {
-
     public static WebDriver driver;
     private static String chromePath = "src/webdriver/chromedriver.exe";
     private static String firefoxPath = "src/webdriver/geckodriver.exe";
 
-
     @Before
     public void setWebDriver() throws Exception {
-
         String browser = System.getProperty("browser");
         if (browser == null) {
             browser = "firefox";
         }
-
         switch (browser) {
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", chromePath);
