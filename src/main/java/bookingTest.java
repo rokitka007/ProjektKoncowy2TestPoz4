@@ -8,5 +8,6 @@ public class bookingTest {
         WebDriver driver = new FirefoxDriver();
 
         driver.get("https://www.booking.com/index.pl.html");
+
     }
 }
