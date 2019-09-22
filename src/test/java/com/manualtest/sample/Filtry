@@ -2,3 +2,4 @@ Scenario: Test walidacji filtrów
     Given: Niezalogowany user na stronie booking.com w zakładce Noclegi sprawdza zależność wyników od zadanych filtrów
     When: Po zaznaczeniu różnych opcji strona powinna się zaktualizować z dostosowaniem do wyborów usera
     Then: Odświeżona strona powinna zawierać tylko wyniki dostosowane do filtrów wybranych przez usera fdg
+0
