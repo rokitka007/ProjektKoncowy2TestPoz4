@@ -9,6 +9,6 @@ public class bookingTest {
         driver = new FirefoxDriver();
 
         driver.get("https://www.booking.com/index.pl.html");
-
+        driver.close();
     }
 }
