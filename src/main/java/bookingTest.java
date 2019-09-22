@@ -16,8 +16,13 @@ public class bookingTest {
         driver.manage().window().maximize();
         driver.get("https://www.booking.com/index.pl.html");
         driver.findElement(By.cssSelector("input.sb-searchbox__input")).sendKeys("Warszawa, mazowieckie, Polska");
-//        driver.findElement(By.cssSelector("button.sb-date-field__icon-btn")).click();
-//        List<WebElement> dateIn = driver.findElements(By.cssSelector("td.bui-calendar__date"));
+        driver.findElement(By.cssSelector("button.sb-date-field__icon-btn")).click();
+        List<WebElement> dateIn = driver.findElements(By.cssSelector("td.bui-calendar__date"));
+        WebElement SingleDay = driver.findElement (By.cssSelector("div.bui-calendar__wrapper:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(1)"));
+        SingleDay.click();
+        WebElement SingleDay2 = driver.findElement(By.cssSelector("div.bui-calendar__wrapper:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(4)"));
+        SingleDay2.click();
+        driver.findElement(By.cssSelector("div.bui-checkbox:nth-child(8) > label:nth-child(2)")).click();
         driver.findElement(By.cssSelector("button.sb-searchbox__button")).click();
         driver.findElement(By.linkText("Cena (od najniższej)")).click();
 
