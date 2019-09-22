@@ -1,0 +1,4 @@
+Scenario: Test udogodnień dla osób niepełnosprawnych
+  Given: Niezalogowany user na stronie booking.com w zakładce Noclegi sprawdza filtry dla osób niepełnosprawncyh
+  When: Po wyborze filtra strona powinna się odświeżyć
+  Then: Odświeżona strona powinna zawierać tylko wyniki z wymaganymi filtrami
